@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx13-test/my-test-lib": ["libs/my-test-lib/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/my-test-lib",
+  "sourceRoot": "libs/my-test-lib/src",
+  "prefix": "nx13-test",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/my-test-lib"],
+      "options": {
+        "jestConfig": "libs/my-test-lib/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/my-test-lib/src/**/*.ts",
+          "libs/my-test-lib/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
